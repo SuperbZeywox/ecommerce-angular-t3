@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@media (min-width: 360px) and (max-width:520px) {
+  .left {
+    .top svg.logo {
+      max-width: 60px;
+    }
+    .bottom{
+      /*.menu-sidebar-content .navbar-sidebar .navbar-list li a {*/
+      .navbar-list li a {
+        font-size: 14px !important;
+      }
+      .container1 {
+        padding: 10px 0;
+        row-gap: 20px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 330px) and (max-width:360px) {
+  .left {
+    .top svg.logo {
+      max-width: 40px;
+    }
+    .bottom{
+      /*.menu-sidebar-content .navbar-sidebar .navbar-list li a {*/
+      .navbar-list li a {
+        font-size: 12px !important;
+      }
+      .container1 {
+        padding: 0;
+        row-gap: 10px !important;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width:330px) {
+  .left {
+    .top svg.logo {
+      max-width: 30px;
+    }
+    .bottom{
+      .navbar-list li a {
+        font-size: 10px !important;
+      }
+      .container1 {
+        padding: 0;
+        row-gap: 0 !important;
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width:330px) {
+  .left{
+    display: none;
+  }
+
+}
+
+
+.auth-wrapper-2 {
+  font-family: Poppins,Arial,sans-serif;
+  height: 100%;
+  display: flex;
+  /*padding: 50px;*/
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+  background: #5a8da1;
+
+  .alert-danger {
+
+    display: flex;
+    color: #f65c78;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    justify-content: center;
+    text-shadow: 0px 0px 4px #ff8fa9;
+    padding-top: 10px;
+
+
+
+  }
+
+  /* Optional: Add an icon */
+  .alert-danger::before {
+    /*content: '⚠️'; !* Warning symbol *!*/
+    align-self: center;
+  }
+  .form-group {
+    label {
+      margin: 5px 5px;
+      font-size: 16px;
+      /*font-family: "Montserrat", sans-serif;*/
+      font-weight: 500;
+      text-shadow: 0px 0px 4px #ccc;
+    }
+  }
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    color:  #353839;
+    text-decoration: underline;
+    border: transparent;
+    &:hover {
+      transition: text-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 20ms;
+      text-shadow: 0px 0px 1px #0A0A0A;
+    }
+    &:active {
+      transform: scale(1.01);
+    }
+  }
+  button {
+    border: 3px solid #205b8d;
+    border-radius: 30px;
+    position: relative;
+    height: 32px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #205b8d;
+    padding: 0 20px;
+    transition: text-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    box-shadow: 5px 0px 10px rgba(52, 152, 219, 0.7); /* Blue shadow */
+    &:hover {
+      text-shadow: 0px 0px 4px #ccc;
+    }
+    &:active {
+      transform: scale(1.01);
+    }
+  }
+
+}
+.custom-card {
+  width: 350px;
+  max-width: 100%;
+  background-color: #eee;
+}
+
+.user-icon {
+  font-size: 100px;
+  color: #205b8d;
+
+}
+
+
+

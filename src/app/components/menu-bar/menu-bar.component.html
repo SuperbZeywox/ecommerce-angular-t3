@@ -1,0 +1,34 @@
+
+
+<div class="container2">
+  <div class="input-container">
+    <div class="dropdown" #mb_d (click)="toggleDropDown()">
+      <button class="dropdown-btn">{{this.category ? this.category.categoryName : 'All'}}</button>
+      <ul class="dropdown-content">
+        <li class="dropdown-item" (click)="getCategory()">All</li>
+        <li class="dropdown-item" *ngFor="let item of items" (click)="getCategory(item)">{{item.categoryName}}</li>
+      </ul>
+    </div>
+
+    <input #myInput1 placeholder="What are you looking for? E.g. mobile..."
+           type="text" (keyup.enter)="doSearch(myInput1.value)">
+    <button (click)="doSearch(myInput1.value)">Search</button>
+  </div>
+
+  <div class="top-menu-wrapper1">
+    <app-card-status [style.margin-right]="'20px'"></app-card-status>
+    <div class="auth_wrapper" *ngIf="!(currentUser?.id)">
+      <button routerLink="/login" >Sign In</button>
+      <button routerLink="/register" class="tm-flex-item">Sign Up</button>
+    </div>
+    <div class="auth_wrapper" *ngIf="(currentUser?.id)">
+      <button *ngIf="isAdmin()" class="role-wrapper tm-flex-item">Admin</button>
+      <button [routerLink]="'/profile'">{{currentUser.username}}</button>
+      <button (click)="logOut()">Sign Out</button>
+    </div>
+  </div>
+
+</div>
+
+
+

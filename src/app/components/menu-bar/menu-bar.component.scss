@@ -1,0 +1,305 @@
+.input-container:has(input:focus) {
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); /* Blue shadow */
+}
+
+
+.container2 {
+  $font-size-tm: 14px;
+  $height-tm: 32px;
+
+
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, “Segoe UI”, "Helvetica CE", Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-around;
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 40%;
+    max-width: 100%;
+    margin-right: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 100px;
+
+    .dropdown{
+      cursor: pointer;
+      font-size: $font-size-tm;
+      .dropdown-btn {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+
+        box-shadow: inset 0px 0px 10px rgba(52, 152, 219, 0.7);
+      }
+      .dropdown-content {
+        background-color: #205b8d;
+        display: none;
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+        //box-shadow: inset 0px 0px 10px rgba(52, 152, 219, 0.7); /* Blue shadow */
+        z-index: 1;
+
+      }
+
+      .dropdown-content .dropdown-item {
+        //color: black;
+        color: #ffffff;
+        padding: 4px 11px;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px dashed gray; /* Adjust the thickness, style, and color as needed */
+        transition: text-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 20ms;
+
+
+      }
+
+      .dropdown-content .dropdown-item:hover {
+        text-shadow: 0px 0px 4px #ccc;
+        box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.7); /* Blue shadow */
+
+      }
+
+      &.active .dropdown-content {
+        display: block;
+      }
+    }
+
+    svg {
+      margin-left: 10px;
+      margin-right: 5px;
+      color: #0094E7;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    input {
+      padding-left: 10px;
+      font-size: $font-size-tm;
+      z-index: 1;
+      border-color: transparent;
+      font-weight: 400;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      border: 3px solid #205b8d;;
+      border-radius: inherit;
+      position: relative;
+      height: $height-tm;
+      font-size: $font-size-tm;
+      color: #ffffff;
+      background-color: #205b8d;
+
+      padding: 0 20px;
+
+      transition: text-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+
+      &:hover {
+        text-shadow: 0px 0px 4px #ccc;
+      }
+
+      &:active {
+        transform: scale(1.01);
+      }
+
+      box-shadow: 5px 0px 10px rgba(52, 152, 219, 0.7); /* Blue shadow */
+
+    }
+  }
+
+  .top-menu-wrapper1 {
+    display: flex;
+    flex-direction: row;
+
+    .auth_wrapper {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .role-wrapper {
+        cursor: auto;
+      }
+
+      button {
+        border: 3px solid #205b8d;;
+        border-radius: inherit;
+        position: relative;
+        height: $height-tm;
+        font-size: $font-size-tm;
+        color: #ffffff;
+        background-color: #205b8d;
+        padding: 0 10px;
+        text-wrap: nowrap;
+
+        border-radius: 2px;
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); /* Blue shadow */
+        transition: text-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+
+        &:hover {
+          text-shadow: 0px 0px 4px #ccc;
+        }
+
+        &:active {
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (min-width:600px) and (max-width:991px){
+  .left,.right {
+    .top {
+      height: 140px;
+    }
+  }
+  .container2 {
+    width: 100%;
+    margin: 0;
+    $font-size-tm: 13px;
+    $height-tm: 30px;
+    $mt-tm: 20px;
+    $mr-tm: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .total {
+      line-height: $height-tm;
+      font-size: $font-size-tm - 2px;
+    }
+    .input-container{
+      width: 80%;
+      input,button { // same css for both
+        height: $height-tm + 6px;
+      }
+    }
+
+    .top-menu-wrapper1 {
+      position: relative;
+      align-self: flex-end;
+      margin-right: $mr-tm;
+      margin-bottom: $mt-tm;
+      .auth_wrapper {
+        button {
+          height: $height-tm ;
+          font-size: $font-size-tm;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: 520px) and (max-width:600px){
+  .left,.right {
+    .top {
+      height: 125px;
+    }
+  }
+  .container2 {
+    width: 100%;
+    margin: 0;
+    $font-size-tm: 11px;
+    $height-tm: 26px;
+    $mt-tm: 20px;
+    $mr-tm: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+
+
+
+    .total {
+      line-height: $height-tm;
+      font-size: $font-size-tm - 2px;
+    }
+    .input-container{
+      width: 80%;
+      input,button { // same css for both
+        height: $height-tm + 4px;
+        font-size: $font-size-tm + 1px;
+      }
+    }
+
+    .top-menu-wrapper1 {
+      .role-wrapper {
+        display: none;
+      }
+      position: relative;
+      align-self: flex-end;
+      margin-right: $mr-tm;
+      margin-bottom: $mt-tm;
+      .auth_wrapper {
+        button {
+          height: $height-tm ;
+          font-size: $font-size-tm;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width:520px){
+  .left,.right {
+    .top {
+      height: 125px;
+    }
+  }
+  .container2 {
+    width: 100%;
+    margin: 0;
+    $font-size-tm: 10px;
+    $height-tm: 26px;
+    $mt-tm: 20px;
+    $mr-tm: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+
+
+
+    .total {
+      line-height: $height-tm;
+      font-size: $font-size-tm - 2px;
+    }
+    .input-container{
+      margin-right: $mr-tm;
+      width: 73%;
+      min-width: 30%;
+      input,button { // same css for both
+        height: $height-tm + 2px;
+        font-size: $font-size-tm ;
+      }
+    }
+
+    .top-menu-wrapper1 {
+      .role-wrapper {
+        display: none;
+      }
+      position: relative;
+      align-self: center;
+      margin-right: $mr-tm;
+      margin-bottom: $mt-tm;
+      .auth_wrapper {
+        button {
+          //flex: 1 0.5 50%;
+          height: $height-tm ;
+          font-size: $font-size-tm;
+        }
+      }
+    }
+  }
+}
+

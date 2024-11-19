@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="pt-5">
+    <div class="card">
+      <div class="card-header">
+        <h3>All Purchased Items</h3>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tracking id</th>
+            <th scope="col">Price</th>
+            <th scope="col">Date</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of purchasedItemList; index as ind">
+            <th scope="row">{{ind +1}}</th>
+            <td>{{item.orderTrackingNumber}}</td>
+            <td>{{item.totalPrice | currency: 'CZK':'symbol'}}</td>
+            <td>{{item.dateCreated | date: "medium"}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

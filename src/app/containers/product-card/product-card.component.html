@@ -1,0 +1,52 @@
+<div class="c1pl2">
+
+  <div
+    *ngIf="myCategory!=undefined?true:false"
+    class="{{'price_range '+myCategory.className}}"> <!-- good/better/best -->
+    <div class="ratting-icon-wrapper">
+      <img src="{{'/sp/c1sp16/'+myCategory.iconName}}">
+    </div>
+    <div class="box-gbb-rating">
+      <span id="rating_label1">{{myCategory.categoryName}}</span>
+      <span id="rating_label2">{{myCategory.description}}</span>
+    </div>
+  </div>
+  <div class="img-icons-wrapper">
+    <div id="imgC">
+<!--      <img src="{{'/pl/'+product.category.categoryName+'/'+product.id+'/'+product.images[0]}}" class="imageTest"/>-->
+      <c-c1g15
+        [pc_ci]="pc_ci"
+        imageUrl="{{'/pl/'+product.category.categoryName+'/'+product.id+'/'+product.images[0]}}"
+      ></c-c1g15>
+    </div>
+    <div class="commodity-icons" #pc_ci>
+      <div
+        class="icon-cnt"
+        *ngFor="let iconName of icons"
+      >
+        <img loading="lazy" src="{{'/sp/c1sp16/'+iconName}}"
+             alt="">
+      </div>
+    </div>
+  </div>
+  <a id="title" [routerLink]="[routerPrediate(product.category.id,product.id)]">{{product.name}}</a>
+  <div class="description">{{product.description}}</div>
+  <div class="promo-gift">{{product.promoGift}}</div>
+  <div class="discount box1">
+    <img src="/sp/c1sp16/plus.svg"
+         alt="">
+    <span id="discountTag">In app for existing and new ZeywoxPlus+ members</span>
+    <span class="discount_image_wrapper">
+    </span>
+    <span class="price" id="discountPrice">{{ (product.price-400) | number: '1.0-2' }},-</span>
+  </div>
+  <div class="purchase1 box1">
+    <span class="price">{{product.price | currency: "CZK":"symbol": "1.0-0"}}</span>
+    <c-c2cb1 [c2cb1Name]="'Add to Card'" (click)="addToCart(product)"></c-c2cb1>
+
+  </div>
+  <div class="stock">in stock > 5pcs</div>
+  <div class="delivery">order at midnight get it at the zeywox shop in the morning</div>
+</div>
+
+

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900");
+button {
+  display: flex;
+  text-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  color: hsl(210, 50%, 85%);
+  background-color: hsl(210, 80%, 42%);
+  box-shadow: hsla(210, 40%, 52%, 0.4) 2px 2px 22px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* bubbles */
+button::before {
+  content: "";
+  pointer-events: none;
+  opacity: 0.6;
+  background: radial-gradient(circle at 20% 35%, transparent 0, transparent 2px, hsl(210, 50%, 85%) 3px, hsl(210, 50%, 85%) 4px, transparent 4px), radial-gradient(circle at 75% 44%, transparent 0, transparent 2px, hsl(210, 50%, 85%) 3px, hsl(210, 50%, 85%) 4px, transparent 4px), radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, hsl(210, 50%, 85%) 5px, hsl(210, 50%, 85%) 6px, transparent 6px);
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+/*# sourceMappingURL=c2cb1.container.css.map */

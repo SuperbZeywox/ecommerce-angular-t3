@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap");
+.c1g15 {
+  font-family: "Grape Nuts", cursive;
+  display: grid;
+  width: 100%;
+  width: 100%;
+  max-width: 1002px;
+}
+.c1g15 figure {
+  width: 173px;
+  perspective: 900px;
+  height: 210px;
+}
+.c1g15 figure img {
+  width: 100%;
+}
+.c1g15 .imageRoll {
+  position: relative;
+  width: 173px;
+  height: 210px;
+  background: transparent;
+  transition: box-shadow 1s ease 0.5s; /* 0.5s delay after hover */
+}
+.c1g15 .imageRoll:hover {
+  box-shadow: 1em 0.5em 2em rgba(17, 34, 51, 0.2666666667), 0 0 5em rgba(17, 34, 51, 0.2666666667) inset;
+}
+.c1g15 .imageRoll i {
+  position: absolute;
+  left: calc(100% - 1px);
+  width: 3.8px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: transform 0.6s var(--delay, 0s) ease-in-out;
+  background-position-x: calc(var(--bpx, 0) + 1px);
+  background-size: 173px 210px;
+}
+.c1g15 .imageRoll > i {
+  left: 0;
+  width: 5px;
+}
+.c1g15 .imageRoll:hover i {
+  transform: rotateY(var(--angle, 0deg)) skewY(var(--skew, 0deg));
+  transition-delay: var(--delay2, 0s);
+}
+.c1g15 .imageRoll > i {
+  --bpx: 0px;
+  --delay: 0s;
+  --delay2: 0.6s;
+  --angle: -10deg;
+  --skew: 0deg;
+}
+.c1g15 .imageRoll > i > i {
+  --bpx: -2.88333333px;
+  --delay: 0.01s;
+  --delay2: 0.59s;
+  --angle: -10.1deg;
+  --skew: -0.1deg;
+}
+.c1g15 .imageRoll > i > i > i {
+  --bpx: -5.76666666px;
+  --delay: 0.02s;
+  --delay2: 0.58s;
+  --angle: -10.2deg;
+  --skew: -0.2deg;
+}
+.c1g15 .imageRoll > i > i > i > i {
+  --bpx: -8.64999999px;
+  --delay: 0.03s;
+  --delay2: 0.57s;
+  --angle: -10.3deg;
+  --skew: -0.3deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i {
+  --bpx: -11.53333332px;
+  --delay: 0.04s;
+  --delay2: 0.56s;
+  --angle: -10.4deg;
+  --skew: -0.4deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i {
+  --bpx: -14.41666665px;
+  --delay: 0.05s;
+  --delay2: 0.55s;
+  --angle: -10.5deg;
+  --skew: -0.5deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i {
+  --bpx: -17.29999998px;
+  --delay: 0.06s;
+  --delay2: 0.54s;
+  --angle: -10.6deg;
+  --skew: -0.6deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i {
+  --bpx: -20.18333331px;
+  --delay: 0.07s;
+  --delay2: 0.53s;
+  --angle: -10.7deg;
+  --skew: -0.7deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i {
+  --bpx: -23.06666664px;
+  --delay: 0.08s;
+  --delay2: 0.52s;
+  --angle: -10.8deg;
+  --skew: -0.8deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -25.94999997px;
+  --delay: 0.09s;
+  --delay2: 0.51s;
+  --angle: -10.9deg;
+  --skew: -0.9deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -28.8333333px;
+  --delay: 0.1s;
+  --delay2: 0.5s;
+  --angle: -11deg;
+  --skew: -1deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -31.71666663px;
+  --delay: 0.11s;
+  --delay2: 0.49s;
+  --angle: -11.1deg;
+  --skew: -1.1deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -34.59999996px;
+  --delay: 0.12s;
+  --delay2: 0.48s;
+  --angle: -11.2deg;
+  --skew: -1.2deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -37.48333329px;
+  --delay: 0.13s;
+  --delay2: 0.47s;
+  --angle: -11.3deg;
+  --skew: -1.3deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -40.36666662px;
+  --delay: 0.14s;
+  --delay2: 0.46s;
+  --angle: -11.4deg;
+  --skew: -1.4deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -43.24999995px;
+  --delay: 0.15s;
+  --delay2: 0.45s;
+  --angle: -11.5deg;
+  --skew: -1.5deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -46.13333328px;
+  --delay: 0.16s;
+  --delay2: 0.44s;
+  --angle: -11.6deg;
+  --skew: -1.6deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -49.01666661px;
+  --delay: 0.17s;
+  --delay2: 0.43s;
+  --angle: -11.7deg;
+  --skew: -1.7deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -51.89999994px;
+  --delay: 0.18s;
+  --delay2: 0.42s;
+  --angle: -11.8deg;
+  --skew: -1.8deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -54.78333327px;
+  --delay: 0.19s;
+  --delay2: 0.41s;
+  --angle: -11.9deg;
+  --skew: -1.9deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -57.6666666px;
+  --delay: 0.2s;
+  --delay2: 0.4s;
+  --angle: -12deg;
+  --skew: -2deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -60.54999993px;
+  --delay: 0.21s;
+  --delay2: 0.39s;
+  --angle: -12.1deg;
+  --skew: -2.1deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -63.43333326px;
+  --delay: 0.22s;
+  --delay2: 0.38s;
+  --angle: -12.2deg;
+  --skew: -2.2deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -66.31666659px;
+  --delay: 0.23s;
+  --delay2: 0.37s;
+  --angle: -12.3deg;
+  --skew: -2.3deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -69.19999992px;
+  --delay: 0.24s;
+  --delay2: 0.36s;
+  --angle: -12.4deg;
+  --skew: -2.4deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -72.08333325px;
+  --delay: 0.25s;
+  --delay2: 0.35s;
+  --angle: -12.5deg;
+  --skew: -2.5deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -74.96666658px;
+  --delay: 0.26s;
+  --delay2: 0.34s;
+  --angle: -12.6deg;
+  --skew: -2.6deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -77.84999991px;
+  --delay: 0.27s;
+  --delay2: 0.33s;
+  --angle: -12.7deg;
+  --skew: -2.7deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -80.73333324px;
+  --delay: 0.28s;
+  --delay2: 0.32s;
+  --angle: -12.8deg;
+  --skew: -2.8deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -83.61666657px;
+  --delay: 0.29s;
+  --delay2: 0.31s;
+  --angle: -12.9deg;
+  --skew: -2.9deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -86.4999999px;
+  --delay: 0.3s;
+  --delay2: 0.3s;
+  --angle: -13deg;
+  --skew: -3deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -89.38333323px;
+  --delay: 0.31s;
+  --delay2: 0.29s;
+  --angle: -13.1deg;
+  --skew: -3.1deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -92.26666656px;
+  --delay: 0.32s;
+  --delay2: 0.28s;
+  --angle: -13.2deg;
+  --skew: -3.2deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -95.14999989px;
+  --delay: 0.33s;
+  --delay2: 0.27s;
+  --angle: -13.3deg;
+  --skew: -3.3deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -98.03333322px;
+  --delay: 0.34s;
+  --delay2: 0.26s;
+  --angle: -13.4deg;
+  --skew: -3.4deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -100.91666655px;
+  --delay: 0.35s;
+  --delay2: 0.25s;
+  --angle: -13.5deg;
+  --skew: -3.5deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -103.79999988px;
+  --delay: 0.36s;
+  --delay2: 0.24s;
+  --angle: -13.6deg;
+  --skew: -3.6deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -106.68333321px;
+  --delay: 0.37s;
+  --delay2: 0.23s;
+  --angle: -13.7deg;
+  --skew: -3.7deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -109.56666654px;
+  --delay: 0.38s;
+  --delay2: 0.22s;
+  --angle: -13.8deg;
+  --skew: -3.8deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -112.44999987px;
+  --delay: 0.39s;
+  --delay2: 0.21s;
+  --angle: -13.9deg;
+  --skew: -3.9deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -115.3333332px;
+  --delay: 0.4s;
+  --delay2: 0.2s;
+  --angle: -14deg;
+  --skew: -4deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -118.21666653px;
+  --delay: 0.41s;
+  --delay2: 0.19s;
+  --angle: -14.1deg;
+  --skew: -4.1deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -121.09999986px;
+  --delay: 0.42s;
+  --delay2: 0.18s;
+  --angle: -14.2deg;
+  --skew: -4.2deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -123.98333319px;
+  --delay: 0.43s;
+  --delay2: 0.17s;
+  --angle: -14.3deg;
+  --skew: -4.3deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -126.86666652px;
+  --delay: 0.44s;
+  --delay2: 0.16s;
+  --angle: -14.4deg;
+  --skew: -4.4deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -129.74999985px;
+  --delay: 0.45s;
+  --delay2: 0.15s;
+  --angle: -14.5deg;
+  --skew: -4.5deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -132.63333318px;
+  --delay: 0.46s;
+  --delay2: 0.14s;
+  --angle: -14.6deg;
+  --skew: -4.6deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -135.51666651px;
+  --delay: 0.47s;
+  --delay2: 0.13s;
+  --angle: -14.7deg;
+  --skew: -4.7deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -138.39999984px;
+  --delay: 0.48s;
+  --delay2: 0.12s;
+  --angle: -14.8deg;
+  --skew: -4.8deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -141.28333317px;
+  --delay: 0.49s;
+  --delay2: 0.11s;
+  --angle: -14.9deg;
+  --skew: -4.9deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -144.1666665px;
+  --delay: 0.5s;
+  --delay2: 0.1s;
+  --angle: -15deg;
+  --skew: -5deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -147.04999983px;
+  --delay: 0.51s;
+  --delay2: 0.09s;
+  --angle: -15.1deg;
+  --skew: -5.1deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -149.93333316px;
+  --delay: 0.52s;
+  --delay2: 0.08s;
+  --angle: -15.2deg;
+  --skew: -5.2deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -152.81666649px;
+  --delay: 0.53s;
+  --delay2: 0.07s;
+  --angle: -15.3deg;
+  --skew: -5.3deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -155.69999982px;
+  --delay: 0.54s;
+  --delay2: 0.06s;
+  --angle: -15.4deg;
+  --skew: -5.4deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -158.58333315px;
+  --delay: 0.55s;
+  --delay2: 0.05s;
+  --angle: -15.5deg;
+  --skew: -5.5deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -161.46666648px;
+  --delay: 0.56s;
+  --delay2: 0.04s;
+  --angle: -15.6deg;
+  --skew: -5.6deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -164.34999981px;
+  --delay: 0.57s;
+  --delay2: 0.03s;
+  --angle: -15.7deg;
+  --skew: -5.7deg;
+}
+.c1g15 .imageRoll > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i > i {
+  --bpx: -167.23333314px;
+  --delay: 0.58s;
+  --delay2: 0.02s;
+  --angle: -15.8deg;
+  --skew: -5.8deg;
+}
+.c1g15 .imageRoll > figcaption {
+  position: absolute;
+  text-align: center;
+  padding-top: 20px;
+  z-index: -1;
+  font-size: 26px;
+  width: 100%;
+  height: 100%;
+  transition: text-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+  opacity: 0.8;
+}
+.c1g15 .imageRoll > figcaption:hover {
+  text-shadow: 0px 0px 4px #ccc;
+  opacity: 1;
+}
+.c1g15 .imageRoll > figcaption:active {
+  transform: scale(1.01);
+}
+.c1g15 .imageRoll > figcaption strong {
+  display: block;
+}
+
+/*# sourceMappingURL=c1g15.container.css.map */

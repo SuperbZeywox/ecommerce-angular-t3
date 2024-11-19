@@ -1,0 +1,72 @@
+@use "sass:math";
+
+button:active {
+  transform: scale(1.01);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //cursor: pointer;
+}
+
+$cyan: #0505A9;
+$dark: #FFFFFF;
+$borderW: 2px;
+$numOfBlobs: 4;
+
+.blob-btn {
+  z-index: 1;
+  // todo: turn it o dynamically
+  &:hover {
+    transition: color 800ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;
+    color: $dark;
+  }
+
+  &__inner {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius:30px;
+  }
+  &__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+  }
+
+  &__blob {
+    position: absolute;
+    top: $borderW;
+    width: math.div(100% , $numOfBlobs);
+    height: 100%;
+    background: $cyan;
+    border-radius: 100%;
+    transform: translate3d(0,150%,0) scale(1.7);
+    transition: transform 0.45s;
+
+    @supports(filter: url('#goo')) {
+      transform: translate3d(0,150%,0) scale(1.4);
+    }
+
+    @for $i from 1 through $numOfBlobs {
+      &:nth-child(#{$i}) {
+        //left: ($i - 1) * (120% / $numOfBlobs);
+        left: ($i - 1) * math.div(120%,$numOfBlobs);
+        transition-delay: ($i - 1) * 0.08s;
+      }
+    }
+
+    .blob-btn:hover & {
+      transform: translateZ(0) scale(1.7);
+
+      @supports(filter: url('#goo')) {
+        transform: translateZ(0) scale(1.4);
+      }
+    }
+  }
+
+}

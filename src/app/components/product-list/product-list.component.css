@@ -1,0 +1,18 @@
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  row-gap: 40px;
+  column-gap: 40px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 70px 30px;
+}
+
+.c1 {
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+}
+
+/*# sourceMappingURL=product-list.component.css.map */

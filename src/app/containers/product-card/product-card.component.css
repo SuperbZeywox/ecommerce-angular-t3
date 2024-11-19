@@ -1,0 +1,150 @@
+.c1pl2 {
+  width: 270px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e8e8e8;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+.c1pl2 .price_range {
+  display: flex;
+  flex-direction: row;
+}
+.c1pl2 .price_range .ratting-icon-wrapper {
+  padding: 2px;
+}
+.c1pl2 .price_range .box-gbb-rating {
+  width: 100%;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2px;
+  align-items: center;
+  color: #373737;
+}
+.c1pl2 .price_range .box-gbb-rating #rating_label1 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.c1pl2 .price_range .box-gbb-rating #rating_label2 {
+  font-size: 11px;
+  line-height: 14px;
+}
+.c1pl2 .price_range.good .ratting-icon-wrapper {
+  background: #67b6ec;
+}
+.c1pl2 .price_range.good .box-gbb-rating {
+  background: rgba(103, 182, 236, 0.3);
+}
+.c1pl2 .price_range.better .ratting-icon-wrapper {
+  background: #a1c900;
+}
+.c1pl2 .price_range.better .box-gbb-rating {
+  background: rgba(161, 201, 0, 0.2);
+}
+.c1pl2 .price_range.best .ratting-icon-wrapper {
+  background: #ffdc45;
+}
+.c1pl2 .price_range.best .box-gbb-rating {
+  background: rgba(255, 220, 69, 0.2);
+}
+.c1pl2 .icon-cnt {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.c1pl2 .img-icons-wrapper {
+  position: relative;
+}
+.c1pl2 .img-icons-wrapper #imgC {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.c1pl2 .img-icons-wrapper #imgC .imageTest {
+  width: 173px;
+  height: 210px;
+}
+.c1pl2 .img-icons-wrapper .commodity-icons {
+  display: block;
+  left: 15px;
+  position: absolute;
+  text-align: left;
+  top: 45px;
+  width: 55px;
+  z-index: 1;
+  transition: transform 1s ease, opacity 1s ease;
+}
+.c1pl2 #title {
+  color: #00275a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  height: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.c1pl2 .description {
+  color: #4a5a64;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  overflow: hidden;
+  padding: 5px 0 0;
+  height: 113px;
+}
+.c1pl2 .promo-gift {
+  color: #f00000;
+  font-size: 12px;
+  font-weight: bold;
+}
+.c1pl2 .box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+.c1pl2 .discount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff3ec;
+  padding: 4px;
+  border-color: #fd7528;
+  border-radius: 3px;
+  border-style: dashed;
+  border-width: 1px;
+  gap: 6px;
+}
+.c1pl2 .discount #discountTag {
+  color: #fd7528;
+  font-size: 11px;
+  text-decoration: underline;
+}
+.c1pl2 .discount #discountPrice {
+  min-width: 45px;
+  font-size: 10px;
+}
+.c1pl2 .price {
+  color: rgb(233, 36, 46);
+  font-weight: bold;
+}
+.c1pl2 .stock {
+  color: #398000;
+  font-weight: 700;
+}
+.c1pl2 .delivery {
+  background-color: #f2fde5;
+  color: #69920f;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/*# sourceMappingURL=product-card.component.css.map */

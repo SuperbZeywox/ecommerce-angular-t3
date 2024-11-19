@@ -1,0 +1,9 @@
+<div class="cart-area d-n">
+<!--<div class="cart-area">-->
+<!--  <a routerLink="/cart-details tm-flex-item">-->
+  <a routerLink="/card-details" class="tm-flex-item">
+    <div class="total">{{ totalPrice | currency: 'CZK':'symbol':'1.0-2'}}
+      <span>{{ totalQuantity }}</span>
+    </div>
+  </a>
+</div>

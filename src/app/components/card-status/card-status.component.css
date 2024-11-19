@@ -1,0 +1,30 @@
+.total {
+  position: relative;
+  display: flex;
+  font-size: 0.7rem;
+  background: #205b8d;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #205b8d;
+  float: left;
+  padding-left: 12px;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.7); /* Blue shadow */
+  transition: text-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.total:hover {
+  text-shadow: 0px 0px 4px #ccc;
+}
+.total:active {
+  transform: scale(1.01);
+}
+.total span {
+  background: #fff;
+  padding: 0 10px;
+  color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 6px;
+}
+
+/*# sourceMappingURL=card-status.component.css.map */

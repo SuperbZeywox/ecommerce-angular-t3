@@ -1,0 +1,61 @@
+
+<div class="c1sp4">
+  <main>
+    <div class="card">
+      <div class="card__title">
+        <div class="icon" (click)="back()">
+          <a ><i class="fa fa-arrow-left"></i></a>
+        </div>
+        <h3 *ngIf="product.category.categoryName != '' ?true : false">{{product.category.categoryName}}</h3>
+      </div>
+      <div class="card__body">
+        <div class="featured_text">
+          <p class="sub">{{product.name}}</p>
+        </div>
+        <div class="half">
+          <div class="image">
+<!--            TODO: 190x230 i temporary added it, later i have to reduce image size-->
+            <img src="{{'/pl/'+product.category.categoryName+'/'+product.id+'/'+product.images[0]}}" alt="" width="180" height="230">
+          </div>
+          <div id="half-2-wrapper">
+            <div class="description">
+              <p>{{product.description}}</p>
+            </div>
+            <span class="stock"><i class="fa fa-pen"></i> In stock</span>
+            <div class="reviews">
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star-o"></i></li>
+              </ul>
+              <span>(36 reviews)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sep"></div>
+      <div class="card__footer">
+        <div class="recommend">
+          <p>Recommended by</p>
+          <!--          <h3>Andrew Palmer</h3>-->
+          <h3>Zeywox Superb</h3>
+        </div>
+        <div class="action">
+          <div class="price-wrapper">
+            <p class="price">{{product.price | currency: "CZK":"symbol":"1.0-0"}}</p>
+          </div>
+          <c-c2cb1
+            [c2cb1Name]="'Add To Card'"
+            [fontSize]="'13px'"
+            [padding]="'9px 15px'"
+            [borderRadius]="'30px'"
+            (click)="addToCart()"
+          ></c-c2cb1>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+

@@ -1,0 +1,23 @@
+@use "sass:math";
+$l1: 300px;
+$card-width: $l1;
+$card-height: $l1;
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, $card-width);
+  row-gap: 40px;
+  column-gap: 40px;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 70px 30px;
+}
+
+.c1 {
+  height: $card-height;
+  width: $card-width;
+  background-color: gray;
+}
+
