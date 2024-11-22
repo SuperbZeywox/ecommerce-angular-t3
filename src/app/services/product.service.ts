@@ -26,7 +26,7 @@ export class ProductService {
 
 
   getProduct(category: IProductCategory,theProductId: number): Observable<IProduct> {
-    const productUrl = `${RestData.HOST}group1/${category.categoryName.toLowerCase()}/${theProductId}`;
+    const productUrl = `${RestData.HOST_BASE2}group1/${category.categoryName.toLowerCase()}/${theProductId}`;
     let products = this.localStorageService.getItem(`${category.id}`);
     if (products) {
       let queriedProduct = (products as IProduct[]).find(product => product.id = theProductId);
@@ -74,7 +74,7 @@ export class ProductService {
                                  theKeyword: string, categoryName:string): Observable<IProduct[]> {
 
     // console.log("searchProductsSpecificCategory")
-    const searchUrl = `${RestData.HOST}group1/${categoryName.toLowerCase()}/filter?name=${theKeyword}`;
+    const searchUrl = `${RestData.HOST_BASE2}group1/${categoryName.toLowerCase()}/filter?name=${theKeyword}`;
     return this.httpClient.get<IProduct[]>(searchUrl).pipe(catchError(err => {
       this.handleError(err);
       return of([]);

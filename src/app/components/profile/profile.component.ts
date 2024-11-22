@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit{
 
   // todo: load email from local storage
 
-  email!: string;
+  // email!: string;
   purchasedItemList: IOrderHistory[] = [];
 
 
@@ -26,16 +26,11 @@ export class ProfileComponent implements OnInit{
 
   ngOnInit(): void {
 
-    let item = this.localStorageService.getItem("currentUser");
-    if (item!=null) {
-      // let user:ICustomer = JSON.parse(item)
-      let user:ICustomer = item
-      this.email = user.email;
-      console.log(this.email);
-    }
-    this.checkoutService.getAllPurchaseItems(this.email,0,10).subscribe(data => {
-      this.purchasedItemList = data.content;
-      console.log(this.purchasedItemList);
+    this.checkoutService.getAllPurchaseItems(0,10).subscribe(data => {
+      if (data) {
+        this.purchasedItemList = data?.content;
+      }
+      // console.log(this.purchasedItemList);
     });
   }
 

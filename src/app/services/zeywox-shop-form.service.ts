@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {IState, State} from '../models/state.model';
 import {ICountry} from '../models/country.model';
-import {Observable, of, tap} from 'rxjs';
+import {catchError, Observable, of, tap} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {RestData} from '../data/restData';
 import {IProduct} from '../models/product.model';
@@ -17,12 +17,18 @@ export class ZeywoxShopFormService {
   ) { }
 
   getCountries(): Observable<ICountry[]> {
-    return this.generalService.getDataCached<ICountry[]>(RestData.ALL_COUNTRIES,"all_countries",RestData.CACHE_DURATION_COUNTRY);
+    return this.generalService.getDataCached<ICountry[]>(RestData.ALL_COUNTRIES,"all_countries",RestData.CACHE_DURATION_COUNTRY)
+      .pipe(catchError(err => {
+        return of([]);
+      }));
   }
 
   getStates(theCountryCode: string): Observable<IState[]> {
     const searchUrl = `${RestData.CUSTOM_STATE_By_Country}?code=${theCountryCode}`;
     return this.generalService.getDataCached<IState[]>(searchUrl,`${theCountryCode}_states`,RestData.CACHE_DURATION_STATE)
+      .pipe(catchError(err => {
+        return of([]);
+      }));
   }
 
 

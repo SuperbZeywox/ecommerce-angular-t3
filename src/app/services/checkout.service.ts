@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Observable} from 'rxjs';
+import {catchError, Observable, of} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {IPurchase} from '../models/purchase.model';
 import {RestData} from '../data/restData';
@@ -21,12 +21,19 @@ export class CheckoutService extends RequestBaseService{
 
 
   placeOrder(purchase: IPurchase): Observable<any> {
-    return this.httpClient.post<IPurchase>(this.purchaseUrl, purchase,{headers: this.getHeaders});
+    return this.httpClient.post<IPurchase>(this.purchaseUrl, purchase,{headers: this.getHeaders})
+      .pipe(catchError(err => {
+        return of(null);
+      }));;
   }
 
   // todo: here inject token instead of email
-  getAllPurchaseItems(email:string,pageNumber: number,pageSize: number): Observable<any> {
-    return this.http.get<OrdersResponse>(`${RestData.ORDERS}?email=${email}`, {headers: this.getHeaders});
+  getAllPurchaseItems(pageNumber: number,pageSize: number): Observable<any> {
+    // return this.http.get<OrdersResponse>(`${RestData.ORDERS}?email=${email}`, {headers: this.getHeaders});
+    return this.http.get<OrdersResponse>(`${RestData.ORDERS}`, {headers: this.getHeaders})
+      .pipe(catchError(err => {
+        return of([]);
+      }));
   }
 }
 

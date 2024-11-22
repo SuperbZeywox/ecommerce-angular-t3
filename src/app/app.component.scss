@@ -18,6 +18,7 @@
       height: calc(100vh - 107px);
       display: grid;
       .menu-sidebar-content{
+        display: grid;
         align-self: center;// if categories > 5
         justify-items: center;
 

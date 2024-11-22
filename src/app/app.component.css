@@ -12,6 +12,7 @@
   display: grid;
 }
 .main .left .bottom .menu-sidebar-content {
+  display: grid;
   align-self: center;
   justify-items: center;
 }
